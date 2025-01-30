@@ -25,7 +25,11 @@ function About() {
         <h3 className="subhead-text">My Skills</h3>
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div key={skill.name} className="block-container w-20 h-20">
+            <div
+              key={skill.name}
+              title={skill.name}
+              className="block-container w-20 h-20"
+            >
               <div className="btn-back rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
